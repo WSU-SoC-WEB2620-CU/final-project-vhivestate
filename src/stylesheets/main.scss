@@ -1,3 +1,105 @@
 // Your styles go here
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import "bootstrap/scss/bootstrap";
+
+nav {
+    background-color: black;
+}
+
+a {
+    text-decoration: none; // Removes underline from all anchor tags
+}
+
+
+footer > div> ul > li{
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+}
+
+footer > div > h5 {
+    color: white;
+}
+
+body {
+    background-color: #fcff33;
+}
+
+// Custom SCSS to ensure elements are centered
+.mt-5.mb-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // This centers all children in the cross-axis
+
+    .row {
+      width: 100%; // Ensures the row takes full width of its container
+      justify-content: center; // Centers the columns in the row horizontally
+    }
+
+    input.form-control {
+        width: auto; 
+    }
+}
+
+.about > .card {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.contactSection > div > div {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.bg-body-tertiary {
+    background-color: #000000; 
+}
+.navbar {
+    background-color: #000000 !important; // Ensures it overrides any other style
+}
+
+
+.navbar {
+    .navbar-toggler-icon {
+      background-color: transparent; // Remove any existing color if necessary
+      background-image: none; // Remove default image
+
+    &::before {
+        content: '\2630'; // Unicode for hamburger icon
+        color: #efff40; 
+        font-size: 1.5rem; // Adjust size as necessary
+    }
+  }
+}
+  
+  .navbar {
+    .navbar-brand {
+      color: #efff40; 
+    }
+}
+
+.offcanvas {
+    background-color: #000000; // Change this to your preferred color
+  }
+  
+  .offcanvas {
+    .offcanvas-title {
+      color: #efff40; // This will change the color of the title in the offcanvas
+    }
+  
+    .nav-link {
+      color: #ffffff; // This will change the color of the nav links in the offcanvas
+      &:hover {
+        color: #dff466; // Color of links on hover
+      }
+    }
+  }
+  
+
+.hero .card-title, .hero .card-text {
+    color: white; /* Ensures text is white and thus, more readable */
+    text-shadow: 1px 1px 2px black; /* Optional: adds a slight shadow for better legibility */
+}
