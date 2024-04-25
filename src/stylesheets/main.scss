@@ -109,3 +109,15 @@ body {
     padding: 1rem; /* Adds padding to the form */
     border-radius: 0.5rem; /* Adds a slight border radius to the form */
 }
+
+#carouselExampleFade {
+  .carousel-control-prev,
+  .carousel-control-next {
+    // Adjusting both brightness and invert to try to force a black color
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%) brightness(0);
+    }
+  }
+}
+
