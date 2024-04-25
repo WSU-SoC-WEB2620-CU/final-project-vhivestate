@@ -103,3 +103,9 @@ body {
     color: white; /* Ensures text is white and thus, more readable */
     text-shadow: 1px 1px 2px black; /* Optional: adds a slight shadow for better legibility */
 }
+
+.form {
+    background-color: #ffffff; /* Ensures the form has a white background */
+    padding: 1rem; /* Adds padding to the form */
+    border-radius: 0.5rem; /* Adds a slight border radius to the form */
+}

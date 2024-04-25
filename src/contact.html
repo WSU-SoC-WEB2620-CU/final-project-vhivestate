@@ -4,8 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Plvnt Tattoo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Directory</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     <h1>CONTACT</h1>
+
+    <form class="mt-5 p-3">
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label" required>Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Reason For Contact</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Which way would you want to be contacted</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Text
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Call
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </form>
+
+    <footer class="d-flex justify-content-evenly pt-5">
+        <div>
+          <h1><i class="bi bi-instagram" style="color: rgb(255, 246, 66);"></i></h1>
+          <h1><i class="bi bi-telephone" style="color: rgb(255, 246, 66);"></i></h1>
+          <h1><i class="bi bi-envelope" style="color: rgb(255, 246, 66);"></i></h1>
+        </div>
+      
+        <div>
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <br>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./booking.html">Booking</a></li>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>

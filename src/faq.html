@@ -4,8 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Plvnt Tattoo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Directory</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     <h1>FAQs</h1>
+
+    <div class="FAQs mt-5 p-3">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Do I need to make an appointment?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, we recommend making an appointment rather than walking into our tattoo shop to ensure that one of our artists is available to work with you. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How old do I have to be to get a tattoo?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                You must be at least 18 years old to get a tattoo without parental consent. Please bring a valid ID to your tattoo appointment to prove your age.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Do you charge a deposit?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We charge a deposit equal to the rate of the first session for all tattoo appointments. For single-session tattoos, the deposit is equal to the entire cost of the tattoo. This deposit is used to compensate the artist if you don’t show up to your appointment or if you cancel with little to no notice.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Can I get a cover-up for an existing tattoo?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, cover-up tattoos are a common request. Our Utah tattoo artists can work with you to design a new tattoo that effectively covers or incorporates your existing tattoo.              
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What payment methods do you accept?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Our tattoo shop accepts cash and major credit cards. Payment is typically made at the end of each session or as agreed upon with your artist.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Does getting a tattoo hurt?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Many people like to refer that getting a tattoo feels like someone is scratching a hot needle across your skin or others like to compare it to a constant feeling of a cat scratch. After about 15 minutes, your adrenaline will start kicking in and help manage some of the pain, but if you’re getting a larger piece done, the pain can come in waves. It can also depend on the quality of the tattoo shop you go to. If you stick with experienced and professional tattoo artists, it can make your tattoo experience much more enjoyable. At Lucky Bamboo Tattoo, our artists strive to make the experience as comfortable as possible.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                How do I take care of my tattoo after getting it done?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We will provide you with detailed aftercare instructions tailored to your tattoo. Generally, use a bandage system that is worn for a total of 5 days. Depending on the need present, we sometimes recommend aftercare products.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Do you offer tattoo removal?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Our tattoo shop doesn’t offer tattoo removal, but we do offer tattoo cover-ups.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Can I get a tattoo if I'm pregnant or breastfeeding?
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                As a precaution, we do not tattoo pregnant or breastfeeding individuals. It’s important to prioritize the health and safety of both the client and the baby.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    <footer class="d-flex justify-content-evenly pt-5">
+        <div>
+          <h1><i class="bi bi-instagram" style="color: rgb(255, 246, 66);"></i></h1>
+          <h1><i class="bi bi-telephone" style="color: rgb(255, 246, 66);"></i></h1>
+          <h1><i class="bi bi-envelope" style="color: rgb(255, 246, 66);"></i></h1>
+        </div>
+      
+        <div>
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <br>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./booking.html">Booking</a></li>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>

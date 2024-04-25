@@ -4,8 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Plvnt Tattoo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Directory</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
     <h1>ABOUT</h1>
+    <div class="p-3 mt-3">
+    <div class="card mb-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./images/about.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">About</h5>
+              <p class="card-text">Lucky Bamboo Tattoo has been voted the Best Tattoo Studio in Utah for several years in a row, and is an award winning tattoo studio located in Layton, Utah. As a company, we strive to be a creative and professional studio that treasures its clients and allows its artists to create quality artwork. Our drive and focus is to deliver only the highest level of art for our treasured clients while also striving for excellent customer service. We know that getting a tattoo is a major decision that no one makes lightly, so we aim to make the experience as relaxing and positive as we can to accommodate customers from all backgrounds. Everything we do is done safely, with sterile procedures in private rooms for maximum comfort for our clients. Come see why so many have voted us as the best tattoo studio in Utah!.</p>
+            </div>
+            <div class="mt-3 mb-3">
+                <a href="./gallery.html">
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-dark" type="button">Book Appointment</button>
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+    <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Studio Information</h5>
+          <ul>
+            <li>A minimum one hour at the artists rate deposit is required for any appointment;
+                more for larger appointments.</li>
+            <li>Deposits are applied at the last appointment, or second to last depending on the remaining amount due.
+            </li>
+            <li>You are allowed one re-schedule per piece as long as 7 business days notice is given. If you reschedule more than once your deposit is canceled and a new one must be made.</li>
+            <li>All deposits are NON-REFUNDABLE.
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer text-body-secondary">
+            Deposits are forfeited if you cancel or change your appointment within less than 7 business days notice and an additional deposit must be made to reschedule.
+        </div>
+      </div>        
+    </div>
+
+    <div class="hero">
+        <div class="card text-bg-dark">
+          <img src="./images/about2.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h1 class="card-title text-center mt-5">Our Work</h1>
+            <div class="mt-3">
+              <a href="./gallery.html">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-dark" type="button">View Gallery</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="d-flex justify-content-evenly pt-5">
+        <div>
+          <h1><i class="bi bi-instagram" style="color: rgb(255, 246, 66);"></i></h1>
+          <h1><i class="bi bi-telephone" style="color: rgb(255, 246, 66);"></i></h1>
+          <h1><i class="bi bi-envelope" style="color: rgb(255, 246, 66);"></i></h1>
+        </div>
+      
+        <div>
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+          </ul>
+        </div>
+      
+        <div>
+          <br>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./booking.html">Booking</a></li>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>
